@@ -25,6 +25,10 @@ ul {
   padding: 1rem 0;
   margin: auto;
 }
+.navbar__logo__span {
+  display: block;
+  margin: 0 0.5rem;
+}
 .navbar__list {
   flex: 1;
   justify-content: center;
@@ -32,6 +36,7 @@ ul {
 .navbar__list {
   display: flex;
 }
+
 .navbar__list__item {
   padding: 1rem 0;
   position: relative;
@@ -53,4 +58,12 @@ ul {
 }
 .navbar__list__link:hover::after {
   width: 100%;
+}
+.showcase {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
