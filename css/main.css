@@ -19,7 +19,8 @@ ul {
   left: 0;
   top: 0;
   z-index: 3;
-  background-color: #000;
+  background-color: transparent;
+  padding: 1rem;
 }
 .navbar__container {
   display: flex;
@@ -47,6 +48,7 @@ ul {
 .navbar__list__link {
   display: inline-block;
   padding: 0 1rem;
+  font-size: 1.1rem;
 }
 .navbar__list__searchbtn {
   display: inline-block;
@@ -76,15 +78,14 @@ ul {
   top: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 6;
+  opacity: 0;
+  display: none;
 }
 .search__div {
   height: 60%;
   background-color: rgb(233, 113, 0);
   position: relative;
   transform: translate3d(0, -100%, 0);
-}
-.search__div--down {
-  transform: translate3d(0, 0, 0);
 }
 .search__form__container {
   padding-top: 8rem;
@@ -157,7 +158,9 @@ ul {
   text-align: center;
   background: url("../img/showcase.jpg") no-repeat center center / cover fixed;
   position: relative;
+  overflow-x: hidden;
 }
+
 .showcase::after {
   content: "";
   position: absolute;
@@ -194,6 +197,7 @@ ul {
   padding: 5.625rem 3.75rem 0 3.75rem;
   position: relative;
   background-color: #fafafa;
+  display: flex;
 }
 .about__images {
   height: 90vh;
@@ -216,10 +220,6 @@ ul {
   background: url("../img/how\ 2.jpg") no-repeat center center / cover;
 }
 .about__text {
-  position: absolute;
-  right: 20%;
-  top: 40%;
-  width: 400px;
 }
 .about__text__title {
   font-size: 2.1rem;
@@ -255,6 +255,7 @@ ul {
   min-height: 60vh;
   background-color: #fafafa;
   padding: 3rem 0;
+  overflow-x: hidden;
 }
 .container--flex {
   max-width: 1800px;
@@ -294,6 +295,7 @@ ul {
   padding: 1.5rem;
   background-color: #333;
   color: #fff;
+  cursor: pointer;
 }
 .newsletter__joinbtn {
   display: inline-block;
@@ -402,4 +404,13 @@ ul {
 .container {
   max-width: 1800px;
   margin: auto;
+}
+@media (max-width: 1024px) {
+  .about {
+    display: block;
+    min-height: auto;
+  }
+  .about__images {
+    height: auto;
+  }
 }
