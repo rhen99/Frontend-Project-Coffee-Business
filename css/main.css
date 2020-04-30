@@ -209,7 +209,7 @@ ul {
   height: 100%;
 }
 .about__image {
-  height: 600px;
+  height: 70%;
   flex-basis: 80%;
   margin: 0 1rem;
 }
@@ -219,8 +219,7 @@ ul {
 .about__image:nth-child(2) {
   background: url("../img/how\ 2.jpg") no-repeat center center / cover;
 }
-.about__text {
-}
+
 .about__text__title {
   font-size: 2.1rem;
   margin-bottom: 0.4rem;
@@ -404,13 +403,4 @@ ul {
 .container {
   max-width: 1800px;
   margin: auto;
-}
-@media (max-width: 1024px) {
-  .about {
-    display: block;
-    min-height: auto;
-  }
-  .about__images {
-    height: auto;
-  }
 }
